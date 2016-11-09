@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from articleManager.views import render_article_page
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^test/$', render_article_page)
 ]
